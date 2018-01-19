@@ -7,8 +7,8 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import DAO.PersonDAO;
 import domain.Person;
-import domain.PersonDAO;
 
 public class JpaTest {
 
@@ -17,7 +17,12 @@ public class JpaTest {
 	 */
 	public static void main(String[] args) {
 		PersonDAO daop = new PersonDAO();
-		daop.create(new Person());
+		daop.create(new Person("fanta","diallo","fantadiallo@gmail.com"));
+		
+		Person p = daop.read((long) 2);
+		
+		
+		System.out.println("Récupéré : " + p.getEmail());
 	}
 
 }

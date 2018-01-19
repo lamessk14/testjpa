@@ -6,21 +6,12 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-
 public class Heater extends SmartDevice {
 	
-	private Long id;
 	private Home home;
+	private String power;
 
-	@Id
-	@GeneratedValue
-	public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}	
 
 	@ManyToOne
 	public Home getHome() {
@@ -29,6 +20,14 @@ public class Heater extends SmartDevice {
 
 	public void setHome(Home home) {
 		this.home = home;
+	}
+
+	public String getPower() {
+		return power;
+	}
+
+	public void setPower(String power) {
+		this.power = power;
 	}
 	
 	
