@@ -1,11 +1,12 @@
 package domain;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
@@ -17,7 +18,8 @@ public class Home {
 	private float taille;
 	private int nbreDePieces;
 	private Person person;
-	private Collection<Heater> heaters;
+	//private Collection<Heater> heaters;
+	public List<Heater> heaters = new ArrayList<Heater>();
 
 	@Id
 	@GeneratedValue
@@ -54,16 +56,24 @@ public class Home {
 		this.person = person;
 	}
 
-	@OneToMany(mappedBy = "home", cascade = CascadeType.PERSIST)
-	public Collection<Heater> getHeaters() {
-		return heaters;
-	}
-
 	public void addDevice(Heater heater) {
 		this.heaters.add(heater);
 	}
+	
+	/**
+	 * @return the heaters
+	 */
+	@OneToMany
+	@JoinColumn(name="home_id")
+	public List<Heater> getHeaters() {
+		return heaters;
+	}
 
-	public void setHeaters(Collection<Heater> heaters) {
+	/**
+	 * 
+	 * @param heaters
+	 */
+	public void setHeaters(List<Heater> heaters) {
 		this.heaters = heaters;
 	}
 
