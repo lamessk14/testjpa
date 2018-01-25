@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:18:38:31 +0100] "GET /robots.txt HTTP/1.1" 404 971 http-bio-9000-exec-3 292
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:18:38:31 +0100] "GET /rest/hello HTTP/1.1" 200 30 http-bio-9000-exec-1 580
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:18:38:35 +0100] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9000-exec-6 0
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:18:39:33 +0100] "GET /rest/hello/home HTTP/1.1" 500 3164 http-bio-9000-exec-8 272
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:18:41:31 +0100] "GET /rest/hello/home HTTP/1.1" 500 3164 http-bio-9000-exec-1 568

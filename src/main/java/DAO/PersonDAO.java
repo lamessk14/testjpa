@@ -17,11 +17,8 @@ public class PersonDAO implements GenericDao<Person,Long>{
 		EntityManagerHelper.getEntityManager().persist(person);
 
 		EntityManagerHelper.commit();
-
 		
-
 		return person;
-
 	}
 
 
@@ -69,8 +66,6 @@ public class PersonDAO implements GenericDao<Person,Long>{
 		EntityManagerHelper.getEntityManager().remove(person);
 
 		EntityManagerHelper.commit();
-
-		
 
 	}
 

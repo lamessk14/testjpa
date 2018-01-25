@@ -10,7 +10,8 @@ public class EntityManagerHelper {
     private static final ThreadLocal<EntityManager> threadLocal;
 
     static {
-        emf = Persistence.createEntityManagerFactory("mysql");      
+        emf = Persistence.createEntityManagerFactory("mysql1");
+        //System.out.println("Coucou");
         threadLocal = new ThreadLocal<EntityManager>();
     }
 
