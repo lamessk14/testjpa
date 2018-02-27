@@ -11,3 +11,6 @@
 0:0:0:0:0:0:0:1 - - [25/Jan/2018:14:35:05 +0100] "GET /rest/hello HTTP/1.1" 200 30 http-bio-9000-exec-4 69
 0:0:0:0:0:0:0:1 - - [25/Jan/2018:14:36:33 +0100] "GET /rest/hello/home HTTP/1.1" 500 3164 http-bio-9000-exec-7 19
 0:0:0:0:0:0:0:1 - - [25/Jan/2018:14:54:26 +0100] "GET /rest/hello/home HTTP/1.1" 500 3164 http-bio-9000-exec-1 202
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:15:19:07 +0100] "GET /robots.txt HTTP/1.1" 404 971 http-bio-9000-exec-3 180
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:15:19:07 +0100] "GET /rest/hello HTTP/1.1" 200 30 http-bio-9000-exec-1 223
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:15:19:16 +0100] "GET /rest/hello/home HTTP/1.1" 200 180 http-bio-9000-exec-6 939
