@@ -4,8 +4,16 @@ Le but des tp 2 et 4 est de concevoir et réaliser une sorte de réseau social p
 
 
 ########################## INSTALLATION DU PROJET  ########################################
+Pour faire fonctionner le projet, il faut:
+- Importer le projet en tant que projet Maven après l'avoir téléchargé
+- Ouvrir hsqldb (en exécutant le fichier show-hsqldb puis run-hsqldb-server
+- Exécuter la classe testJPA pour peupler la base de données hsqldb
+- Exécuter le projet en tant que projet Maven et mettre dans goal: tomcat7:run . Dans notre cas, le port est 9000
+- Aller dans votre navigateur et saisir : http://localhost::9000 et cela vous menera à la page d'accueil qui comporte 3 liens. Ceux permettent de créer une personne, une maison et un équipement.
 
-
+Nous avons réalisé les autres classes ou consignes du TP4.Pour y accéder:
+- http://localhost::9000/rest/hello
+- http://localhost::9000/rest/hello/home
 
 ################## Question 6.  Mise en évidence du problème de n+1 select. (TP2) #########################
 
