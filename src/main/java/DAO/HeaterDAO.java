@@ -1,11 +1,18 @@
 package DAO;
 
+
+
 import java.util.Collection;
 import java.util.List;
 
 import domain.Heater;
 import jpa.EntityManagerHelper;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 public class HeaterDAO implements GenericDao<Heater, Long> {
 
 	public Heater create(Heater heater) {
@@ -36,6 +43,7 @@ public class HeaterDAO implements GenericDao<Heater, Long> {
 		return heater;
 	}
 
+	
 	public void delete(Heater heater) {
 		EntityManagerHelper.beginTransaction();
 

@@ -13,6 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.PersonDAO;
 import domain.Person;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 @WebServlet
 (name="mytest",urlPatterns={"/myurl"})
 

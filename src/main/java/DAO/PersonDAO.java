@@ -51,14 +51,8 @@ public class PersonDAO implements GenericDao<Person,Long>{
 
 		EntityManagerHelper.commit();
 
-		
-
 		return person;
-
-
 	}
-
-
 
 	public void delete(Person person) {
 		EntityManagerHelper.beginTransaction();
@@ -68,7 +62,5 @@ public class PersonDAO implements GenericDao<Person,Long>{
 		EntityManagerHelper.commit();
 
 	}
-
-
 
 }

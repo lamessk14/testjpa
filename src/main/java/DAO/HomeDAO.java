@@ -7,6 +7,11 @@ import domain.Heater;
 import domain.Home;
 import jpa.EntityManagerHelper;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 public class HomeDAO implements GenericDao<Home,Long>{
 	
 	public Home create(Home home) {
@@ -17,13 +22,8 @@ public class HomeDAO implements GenericDao<Home,Long>{
 
 		EntityManagerHelper.commit();
 
-		
-
 		return home;
-
 	}
-
-
 
 	public Home read(Long id) {
 		return EntityManagerHelper.getEntityManager().find(Home.class, id);		//return p.getId();
@@ -50,18 +50,11 @@ public class HomeDAO implements GenericDao<Home,Long>{
 		return home;
 	}
 
-
-
 	public void delete(Home home) {
 		EntityManagerHelper.beginTransaction();
 
 		EntityManagerHelper.getEntityManager().remove(home);
 
 		EntityManagerHelper.commit();
-
-		
-
 	}
-
-
 }

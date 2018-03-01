@@ -13,6 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.PersonDAO;
 import domain.Person;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 @WebServlet(name = "opower", urlPatterns = { "/Opower" })
 
 public class Opower extends HttpServlet {
@@ -53,8 +58,6 @@ public class Opower extends HttpServlet {
 		    out.write("</tr>");
 		 }
 		 out.write("</table>"); 
-		
-
 	}
 
 }

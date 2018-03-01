@@ -4,6 +4,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 public class EntityManagerHelper {
 
     private static final EntityManagerFactory emf; 
@@ -11,10 +16,13 @@ public class EntityManagerHelper {
 
     static {
         emf = Persistence.createEntityManagerFactory("prod");
-        //System.out.println("Coucou");
         threadLocal = new ThreadLocal<EntityManager>();
     }
 
+    /**
+     * 
+     * @return entityManager
+     */
     public static EntityManager getEntityManager() {
         EntityManager em = threadLocal.get();
 

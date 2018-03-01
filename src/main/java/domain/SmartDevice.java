@@ -7,6 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 @Entity
 @Inheritance
 public abstract class SmartDevice  implements Serializable{
@@ -20,17 +25,28 @@ public abstract class SmartDevice  implements Serializable{
 		return idSD;
 	}
 	
+	/**
+	 * 
+	 * @param idSD
+	 */
 	public void setIdSD(long idSD) {
 		this.idSD = idSD;
 	}
 	
+	/**
+	 * 
+	 * @return le type d'equipement
+	 */
 	public String getType() {
 		return type;
 	}
 	
+	/**
+	 * 
+	 * @param type
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
-	
 
 }

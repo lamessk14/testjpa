@@ -8,6 +8,12 @@ import javax.ws.rs.core.MediaType;
 import domain.Heater;
 import domain.Home;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
+
 @Path("/hello")
 public class SampleWebService {
 

@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.PersonDAO;
 import domain.Person;
 
+/**
+ * 
+ * @author Fanta COULIBALY & Louise-Agnès MACKONGO
+ *
+ */
 @WebServlet(name="userinfo",urlPatterns={"/UserInfo"})
 
 public class UserInfo extends HttpServlet {
